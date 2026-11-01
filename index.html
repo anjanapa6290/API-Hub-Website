@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="API Hub — discover, test, and learn about useful APIs.">
+  <title>API Hub | Discover APIs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✳</span> API<span>Hub</span></a>
+    <nav>
+      <a href="#explore">Explore APIs</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="github-link" href="https://github.com/public-apis/public-apis" target="_blank" rel="noreferrer">API directory ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-badge"><span class="pulse"></span> YOUR API DISCOVERY PLATFORM</div>
+      <h1>One hub.<br><span>Endless possibilities.</span></h1>
+      <p class="hero-copy">Discover useful APIs, explore what they do, and jump-start your next project with the right tools.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#explore">Explore APIs <span>→</span></a>
+        <a class="button secondary" href="#how-it-works">How it works</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>6</strong><span>Featured APIs</span></div>
+        <div><strong>4</strong><span>Categories</span></div>
+        <div><strong>100%</strong><span>Beginner friendly</span></div>
+      </div>
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    </section>
+
+    <section class="explore section" id="explore">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE DIRECTORY</p><h2>Find your next API</h2><p class="muted">A hand-picked collection for developers and curious builders.</p></div>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search APIs..." aria-label="Search APIs"></div>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All APIs <span>6</span></button>
+        <button class="filter" data-category="Data">Data</button>
+        <button class="filter" data-category="Tools">Tools</button>
+        <button class="filter" data-category="Media">Media</button>
+        <button class="filter" data-category="Learning">Learning</button>
+      </div>
+      <div class="api-grid" id="apiGrid"></div>
+      <p id="emptyState" class="empty-state" hidden>No APIs match your search. Try another keyword.</p>
+    </section>
+
+    <section class="how section" id="how-it-works">
+      <div class="section-heading"><div><p class="eyebrow">GET STARTED</p><h2>From idea to integration</h2><p class="muted">Three simple steps to start building with APIs.</p></div></div>
+      <div class="steps">
+        <article class="step"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Discover</h3><p>Browse the directory and find an API that fits your project idea.</p></article>
+        <article class="step"><span class="step-number">02</span><div class="step-icon">⌘</div><h3>Explore</h3><p>Read the description and open the official documentation to learn its endpoints.</p></article>
+        <article class="step"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Build</h3><p>Try a request, handle the response, and bring your application to life.</p></article>
+      </div>
+    </section>
+
+    <section class="cta section" id="about">
+      <div><p class="eyebrow">BUILD SOMETHING GREAT</p><h2>Your next project starts with an API.</h2><p>Keep exploring, keep experimenting, and turn ideas into useful applications.</p></div>
+      <a class="button light" href="#explore">Browse the hub <span>→</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">✳</span> API<span>Hub</span></a><p>Made for builders, learners, and curious minds.</p><span class="copyright">© <span id="year"></span> API Hub</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
